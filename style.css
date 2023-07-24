@@ -131,7 +131,7 @@ body {
 }
 
 /*DESKTOP SETTINGS*/
-@media screen and (min-width: 375.1px) {
+@media screen and (min-width: 23.444rem) {
     body {
         background-image: url(images/pattern-background-desktop.svg);
     }
