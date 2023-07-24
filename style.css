@@ -1,0 +1,173 @@
+/*BASE SETTINGS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* CARD (MAIN) SETTINGS*/
+.container {
+    max-width: 23.5rem;
+    margin: 0 auto;
+}
+
+.card {
+    margin: 0 1.43rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.25rem;
+    box-shadow: 0rem 2.5rem 2rem -.5rem hsl(245, 75%, 52%, .15);
+}
+
+/* CONTENT SETTING*/
+#hero-img {
+    width: 100%;
+    display: block;
+    border-radius: 1.25rem 1.25rem 0 0;
+    margin-bottom: 2rem;
+}
+
+.order-sum h1 {
+    font-size: 1.39rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.order-sum p {
+    line-height: 1.5rem;
+    padding: 1rem 1.9rem;
+    margin-bottom: .6rem;
+}
+
+/*PLANT PREVIEW SETTING*/
+.plan-prvw {
+    background-color: hsl(225, 100%, 98%);
+    margin: 0 1.5rem;
+    height: 5rem;
+    border-radius: .62rem;
+    margin-bottom: 1.5rem;
+}
+
+.plan-prvw ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+.plan-prvw ul li:nth-child(2) {
+    line-height: 1.3rem;
+    font-size: .9rem;
+    white-space: nowrap;
+    padding-right: 15%;
+}
+
+.plan-prvw ul li span {
+    font-weight: 900;
+    font-size: .9rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan-prvw ul li a {
+    font-size: .8rem;
+    font-weight: 750;
+    color: hsl(245, 75%, 52%);
+}
+
+.plan-prvw ul li a:hover {
+    color: hsl(245, 75%, 52%, .65);
+    text-decoration: none;
+}
+
+/*PAYMENT BUTTONS SETTINGS*/
+.payment-btns {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+}
+
+.proceed-pay-btn {
+    height: 3rem;
+    border-radius: .62rem;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    box-shadow: 0rem 1.3rem 1rem -.25rem hsl(245, 75%, 52%, .15);
+}
+
+.proceed-pay-btn:hover {
+    background-color: hsl(245, 75%, 52%, .65);
+    cursor: pointer;
+}
+
+.payment-btns a {
+    color: hsl(224, 23%, 55%);
+    font-size: .9rem;
+    font-weight: 800;
+    text-decoration: none;
+    margin: 1.6rem 0 2.4rem 0;
+}
+
+.payment-btns a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+/*DESKTOP SETTINGS*/
+@media screen and (min-width: 375.1px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+
+    .container {
+        max-width: 28.93rem;
+    }
+
+    .card {
+        margin: 0 1.43rem;
+    }
+
+    .order-sum h1 {
+        font-size: 1.8rem;
+        margin-top: 2.5rem;
+    }
+    
+    .plan-prvw, .payment-btns {
+        margin: 0 2.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .plan-prvw ul li:nth-child(2) {
+        line-height: 1.3rem;
+        font-size: 1rem;
+    }
+
+    .plan-prvw ul li span {
+        font-size: 1rem;
+    }
+
+    .plan-prvw ul li a {
+        font-size: .9rem;
+    }
+
+    .payment-btns a {
+        margin: 1.8rem 0 3rem 0;
+    }
+}
