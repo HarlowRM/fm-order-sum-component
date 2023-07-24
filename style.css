@@ -52,7 +52,7 @@ body {
     margin-bottom: .6rem;
 }
 
-/*PLANT PREVIEW SETTING*/
+/*PLAN PREVIEW SETTING*/
 .plan-prvw {
     background-color: hsl(225, 100%, 98%);
     margin: 0 1.5rem;
@@ -137,7 +137,7 @@ body {
     }
 
     .container {
-        max-width: 28.93rem;
+        max-width: 29.93rem;
     }
 
     .card {
@@ -147,6 +147,10 @@ body {
     .order-sum h1 {
         font-size: 1.8rem;
         margin-top: 2.5rem;
+    }
+
+    .order-sum p {
+        padding: 1rem 2.1rem;
     }
     
     .plan-prvw, .payment-btns {
